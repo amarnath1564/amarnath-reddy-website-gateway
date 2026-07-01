@@ -1,0 +1,125 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+body{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    background-color: rgb(0, 0, 0);
+    align-content: center;
+}
+.gateway-holder{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    position: relative;
+    background: black;
+    align-content: center;
+    width:40%;
+    border:1px;
+    box-shadow:0 0px 50px rgba(255, 255, 255, 0.2);
+    border-color: white;
+    border-style: solid;
+    border-radius:24px;
+    padding-bottom: 30px;
+    padding-top:30px;
+    margin-top:80px;
+    height:400px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease; 
+}
+.gateway-holder::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  
+  background: linear-gradient(135deg, #ff007f, #7f00ff, #00f0ff);
+  border-radius: 12px;
+  filter: blur(25px);
+  opacity: 0.4;
+}
+.logo-holder{
+    display:flex;
+    justify-content: center;
+    background-color: white;
+    padding-top:10px;
+    padding-bottom:10px;
+    margin-bottom: 15px;
+    align-content: center;
+    width:100%;
+}
+.ar-logo{
+    height:60px;
+    align-items: center;
+}
+.gateway-holder .link-holder{
+    display:flex;
+    width:90%;
+    align-content: center;
+    justify-content: center;
+    text-decoration: none;
+    color: inherit;
+}
+.authorsite-gate,
+.portfoliosite-gate {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: white;
+    padding:25px;
+    border-radius: 60px;
+    margin-top: 20px;
+    font-size:20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width:90%;
+    transition:0.4s ease;
+    cursor: pointer;
+}
+.link-holder:hover .authorsite-gate{
+    background-image: url(https://i0.wp.com/freedom.to/blog/wp-content/uploads/2019/11/kat-stokes-BoYnwJ8lM54-unsplash-scaled-e1573654631113.jpg?fit=1024%2C683&ssl=1);
+    background-size:cover ;
+    background-position: center;
+    padding:40px;
+    font-weight:600;
+    color:white;
+    animation: shadowOrbit 4s linear infinite; 
+}
+.link-holder:hover .portfoliosite-gate{
+    background-image: url(https://dac.digital/wp-content/uploads/2022/01/dac-www-3-1200x680-optimized.png);
+    background-size:cover ;
+    background-position: center;
+    padding:40px;
+    font-weight:600;
+    color:white;
+    animation: shadowOrbit 4s linear infinite; 
+}
+@keyframes shadowOrbit {
+  0% {
+    /* Top-Left side (Negative X, Negative Y) */
+    box-shadow: 0px 0px 20px rgba(255, 0, 127, 0.3);
+  }
+  25% {
+    /* Top-Right side (Positive X, Negative Y) */
+    box-shadow: 0px 0px 20px rgba(127, 0, 255, 0.3);
+  }
+  50% {
+    /* Bottom-Right side (Positive X, Positive Y) */
+    box-shadow: 0px 0px 20px rgba(0, 240, 255, 0.3);
+  }
+  75% {
+    /* Bottom-Left side (Negative X, Positive Y) */
+    box-shadow: 0px 0px 20px rgba(255, 0, 127, 0.3);
+  }
+  100% {
+    /* Back to Top-Left */
+    box-shadow: 0px 0px 20px rgba(255, 0, 127, 0.3);
+  }
+}
