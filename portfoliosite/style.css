@@ -272,6 +272,7 @@ section{
     margin-left:75px;
     margin-right: 75px;
     padding-top:30px;
+    scroll-margin-top: 130px;
 }
 
 .about h2{
@@ -335,6 +336,7 @@ PROJECTS
  
 .projects{
     padding-top:20px;
+    scroll-margin-top: 130px;
 }
 
 .projects h2{
@@ -380,6 +382,7 @@ SKILLS
 
 .skills{
     padding-top:20px;
+    scroll-margin-top: 130px;
 }
 
 .skills h2{
@@ -449,6 +452,7 @@ TIMELINE
 
 .events{
     background-color: #22083c;
+    scroll-margin-top: 70px;
 }
 .events h2{
     font-size:40px;
@@ -497,7 +501,9 @@ TIMELINE
 /* ===========================
 CONTACT
 =========================== */
-
+.contact{
+    scroll-margin-top: 65px;
+}
 .contact-form{
     max-width:700px;
     margin:auto;
